@@ -4,7 +4,7 @@ CREATE SCHEMA `ikea` ;
 /*CREATE TABLE*/
 CREATE TABLE `ikea`.`member` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(10) NULL,
+  `name` VARCHAR(45) NULL,
   `sex` VARCHAR(10) NULL,
   `address` VARCHAR(300) NULL,
   `email` VARCHAR(45) NULL,
@@ -17,8 +17,9 @@ CREATE TABLE `ikea`.`product` (
   `width` VARCHAR(45) NULL COMMENT 'cm\n',
   `depth` VARCHAR(45) NULL COMMENT 'cm\n',
   `height` VARCHAR(45) NULL COMMENT 'cm\n',
+  `vendor` VARCHAR(45) NULL DEFAULT NULL,
   `category_id` INT NULL,
-  `source` VARCHAR(45) NULL,
+  `source` VARCHAR(300) NULL,
   PRIMARY KEY (`id`),
   INDEX `category_id_idx` (`category_id` ASC) VISIBLE,
   CONSTRAINT `category_id`
@@ -47,7 +48,6 @@ CREATE TABLE `ikea`.`wish_list` (
 CREATE TABLE `ikea`.`category` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
-  `vendor` VARCHAR(45) NULL,
   PRIMARY KEY (`id`));
   
   CREATE TABLE `ikea`.`export` (
