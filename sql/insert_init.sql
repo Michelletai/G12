@@ -18,3 +18,9 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`category` (`id`, `name`) 
 VALUES ('1', '斗櫃'),
  ('2','和室椅');
+
+
+/*category*/
+INSERT INTO `ikea`.`category` (`id`, `name`) 
+VALUES ('1', '斗櫃'),
+ ('2','和室椅');
