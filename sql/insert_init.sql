@@ -15,7 +15,7 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】MALM-掀床', '13400', '166', '209', '38', 'ikea', '4', 'https://www.ikea.com/tw/zh/catalog/products/10404802/');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】MELLTORP-餐桌', '1590', '125', '75', '74', 'ikea', '3', 'https://www.ikea.com/tw/zh/catalog/products/S39280033/');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】INGO-桌子', '2190', '120', '75', '73', 'ikea', '3', 'https://www.ikea.com/tw/zh/catalog/products/60161797/');
-
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】FOLLAFOSS-雙人床框', '8490', '218', '161', '90', 'ikea', '5', 'https://www.ikea.com/tw/zh/catalog/products/S19281934/');
 
 
 /*wish_list*/
