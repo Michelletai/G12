@@ -27,7 +27,7 @@ exports.getDashboard = async (req, res, next) => {
         postCount = rows[0].count;
       })
     */
-    const getMember = await Product.fetchAll()
+    const getMember = await Product.fetchAllInfo()
       .then(([rows]) => {
         product = rows;
       })

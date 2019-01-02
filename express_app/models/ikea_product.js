@@ -14,6 +14,10 @@ module.exports = class member {
   }
 
   // READ
+  static fetchAllInfo() {
+    return db.execute('SELECT pro.id,pro.name,price,width,depth,height,vendor,category_id,source,cat.id as cid,cat.name as cname FROM ikea.product pro left join ikea.category cat on pro.category_id = cat.id;');
+  }
+
   static fetchAll() {
     return db.execute('SELECT * FROM product');
   }
@@ -21,7 +25,7 @@ module.exports = class member {
   static findById(id) {
     return db.execute('SELECT * FROM product where id = ?', [id]);
   }
-
+  
   // DELETE
   static deleteById(id) {
     return db.execute(
