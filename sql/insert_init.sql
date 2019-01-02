@@ -14,7 +14,6 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】LANDSKRONA-雙人座沙發', '22900', '164', '89', '78', 'ikea', '4', 'https://www.ikea.com/tw/zh/catalog/products/S99031743/');
 asdfgfewfs
 
-
 /*wish_list*/
 INSERT INTO `ikea`.`wish_list` (`mid`, `pid`) VALUES ('3', '2');
 
@@ -28,3 +27,12 @@ UPDATE `ikea`.`category` SET `name` = '椅子' WHERE (`id` = '2');
 INSERT INTO `ikea`.`category` (`name`) VALUES ('沙發');
 UPDATE `ikea`.`category` SET `name` = '櫃子' WHERE (`id` = '1');
 INSERT INTO `ikea`.`category` (`name`) VALUES ('床');
+
+/*category*/
+INSERT INTO `ikea`.`category` (`id`, `name`) 
+VALUES ('1', '斗櫃'),
+ ('2','和室椅');
+
+
+
+哈哈哈我先了
