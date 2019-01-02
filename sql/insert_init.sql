@@ -12,6 +12,13 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《HOPMA》五抽斗櫃-胡桃色', '1580', '40.3', '95', '80', 'HOPMA', '1', 'https://24h.pchome.com.tw/prod/DEABHV-A9005WBAG?fq=/S/DEAB78');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('棉花田【萊歐】多段式獨立彈簧折疊和室椅', '2099', '17', '120', '30', '萊歐', '2', 'https://24h.pchome.com.tw/prod/DEAB7F-A9007NRFH?fq=/S/DEAB7F');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】LANDSKRONA-雙人座沙發', '22900', '164', '89', '78', 'ikea', '4', 'https://www.ikea.com/tw/zh/catalog/products/S99031743/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】MALM-掀床', '13400', '166', '209', '38', 'ikea', '4', 'https://www.ikea.com/tw/zh/catalog/products/10404802/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】MELLTORP-餐桌', '1590', '125', '75', '74', 'ikea', '3', 'https://www.ikea.com/tw/zh/catalog/products/S39280033/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】INGO-桌子', '2190', '120', '75', '73', 'ikea', '3', 'https://www.ikea.com/tw/zh/catalog/products/60161797/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】FOLLAFOSS-雙人床框', '8490', '218', '161', '90', 'ikea', '5', 'https://www.ikea.com/tw/zh/catalog/products/S19281934/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】TARVA-雙人床框', '4990', '209', '160', '92', 'ikea', '5', 'https://www.ikea.com/tw/zh/catalog/products/S09198515/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】BÖRJE-餐椅', '1490', '44', '55', '100', 'ikea', '2', 'https://www.ikea.com/tw/zh/catalog/products/40410793/');
+
 
 /*wish_list*/
 INSERT INTO `ikea`.`wish_list` (`mid`, `pid`) VALUES ('3', '2');
