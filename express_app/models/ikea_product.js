@@ -1,6 +1,6 @@
 const db = require('../util/ikea');
 
-module.exports = class member {
+module.exports = class Member {
   constructor(id, name, price, width, depth, height, vendor, category_id, source) {
     this.id = id;
     this.name = name;

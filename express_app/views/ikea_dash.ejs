@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <title>家具查價網</title>
     <script>
-        function editPost(id) {
-            window.location.href = "/post/edit?id=" + id;
+        function editProduct(id) {
+            window.location.href = "/edit?id=" + id;
         }
 
         function addPost() {
@@ -148,8 +148,8 @@
                                             <a href="<%= product[i].source %>">點我前往</a>
                                         </td>
                                         <td>
-                                            <button value="Details" class="btn btn-secondary" onclick="editPost('<%= product[i].id %>')">
-                      <i class="fas fa-angle-double-right"></i> Details
+                                            <button value="Details" class="btn btn-secondary" onclick="editProduct('<%= product[i].id %>')">
+                      <i class="fas fa-angle-double-right"></i> 編輯
                     </button>
                                         </td>
                                     </tr>
@@ -203,7 +203,7 @@
                 <div class="col">
                     <p class="lead text-center">
                         Copyright &copy;
-                        <span id="year"></span> Blogen
+                        <span id="year"></span> 家具查詢網@tku12
                     </p>
                 </div>
             </div>

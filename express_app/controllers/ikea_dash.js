@@ -36,7 +36,6 @@ exports.getDashboard = async (req, res, next) => {
         productCount = rows[0].count;
       })
     
-
     const getCategories = await Category.fetchAll()
       .then(([rows]) => {
         for (let p of rows) {
