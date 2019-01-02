@@ -12,6 +12,7 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《HOPMA》五抽斗櫃-胡桃色', '1580', '40.3', '95', '80', 'HOPMA', '1', 'https://24h.pchome.com.tw/prod/DEABHV-A9005WBAG?fq=/S/DEAB78');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('棉花田【萊歐】多段式獨立彈簧折疊和室椅', '2099', '17', '120', '30', '萊歐', '2', 'https://24h.pchome.com.tw/prod/DEAB7F-A9007NRFH?fq=/S/DEAB7F');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】LANDSKRONA-雙人座沙發', '22900', '164', '89', '78', 'ikea', '4', 'https://www.ikea.com/tw/zh/catalog/products/S99031743/');
+asdfgfesasdasdadasds
 asdfgfasdioasjiksaj哈哈哈我先了哈哈哈我先了ewfs
 
 /*wish_list*/
