@@ -19,9 +19,5 @@ INSERT INTO `ikea`.`wish_list` (`mid`, `pid`) VALUES ('3', '2');
 INSERT INTO `ikea`.`category` (`id`, `name`) 
 VALUES ('1', '斗櫃'),
  ('2','和室椅');
+INSERT INTO `ikea`.`category` (`name`) VALUES ('餐桌');
 
-
-/*category*/
-INSERT INTO `ikea`.`category` (`id`, `name`) 
-VALUES ('1', '斗櫃'),
- ('2','和室椅');
