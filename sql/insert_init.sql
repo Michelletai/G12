@@ -12,6 +12,7 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《HOPMA》五抽斗櫃-胡桃色', '1580', '40.3', '95', '80', 'HOPMA', '1', 'https://24h.pchome.com.tw/prod/DEABHV-A9005WBAG?fq=/S/DEAB78');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('棉花田【萊歐】多段式獨立彈簧折疊和室椅', '2099', '17', '120', '30', '萊歐', '2', 'https://24h.pchome.com.tw/prod/DEAB7F-A9007NRFH?fq=/S/DEAB7F');
 
+
 /*wish_list*/
 INSERT INTO `ikea`.`wish_list` (`mid`, `pid`) VALUES ('3', '2');
 
@@ -25,3 +26,7 @@ VALUES ('1', '斗櫃'),
 INSERT INTO `ikea`.`category` (`id`, `name`) 
 VALUES ('1', '斗櫃'),
  ('2','和室椅');
+
+
+
+哈哈哈我先了
