@@ -21,3 +21,7 @@ VALUES ('1', '斗櫃'),
  ('2','和室椅');
 INSERT INTO `ikea`.`category` (`name`) VALUES ('餐桌');
 
+UPDATE `ikea`.`category` SET `name` = '椅子' WHERE (`id` = '2');
+INSERT INTO `ikea`.`category` (`name`) VALUES ('沙發');
+UPDATE `ikea`.`category` SET `name` = '櫃子' WHERE (`id` = '1');
+INSERT INTO `ikea`.`category` (`name`) VALUES ('床');
