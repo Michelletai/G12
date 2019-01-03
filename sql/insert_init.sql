@@ -18,6 +18,11 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】FOLLAFOSS-雙人床框', '8490', '218', '161', '90', 'ikea', '5', 'https://www.ikea.com/tw/zh/catalog/products/S19281934/');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】TARVA-雙人床框', '4990', '209', '160', '92', 'ikea', '5', 'https://www.ikea.com/tw/zh/catalog/products/S09198515/');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】BÖRJE-餐椅', '1490', '44', '55', '100', 'ikea', '2', 'https://www.ikea.com/tw/zh/catalog/products/40410793/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('MALM 書桌', '4990', '140', '65', '73', 'ikea', '3', 'https://www.ikea.com/tw/zh/catalog/products/20361147/#/00359824');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('FROSTA 椅凳', '299', '42', '42', '45', 'ikea', '2', 'https://www.ikea.com/tw/zh/catalog/products/60162301/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('ODGER 餐椅', '2490', '45', '51', '43', 'ikea', '2', 'https://www.ikea.com/tw/zh/catalog/products/40359997/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('HEMNES 抽屜櫃/2抽', '3199', '54', '38', '66', 'ikea', '1', 'https://www.ikea.com/tw/zh/catalog/products/70355686/#/70355686');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('TARVA 床邊桌', '1995', '48', '39', '62', 'ikea', '3', 'https://www.ikea.com/tw/zh/catalog/products/10219611/');
 
 
 /*wish_list*/
