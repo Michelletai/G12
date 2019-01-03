@@ -1,3 +1,4 @@
 # ignore
 
 express_app/node_modules
+express_app/package-lock\.json

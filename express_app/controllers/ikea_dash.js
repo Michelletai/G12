@@ -2,13 +2,13 @@ const moment = require('moment');
 
 const Member = require('../models/ikea_member');
 const Product = require('../models/ikea_product');
-const Category = require('../models/category');
+const Category = require('../models/ikea_category');
 const User = require('../models/user');
 
 exports.getDashboard = async (req, res, next) => {
 
-  let posts;
-  let postCounts;
+  let product;
+  let productCounts;
   let categories;
   let categoryCount;
   let userCount;
@@ -36,7 +36,6 @@ exports.getDashboard = async (req, res, next) => {
         productCount = rows[0].count;
       })
     
-
     const getCategories = await Category.fetchAll()
       .then(([rows]) => {
         for (let p of rows) {
@@ -57,7 +56,7 @@ exports.getDashboard = async (req, res, next) => {
       })
 
     let data = {
-      posts: posts,
+      product: product,
       categories: categories,
       productCount: productCount,
       categoryCount: categoryCount,
