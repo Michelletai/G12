@@ -18,7 +18,7 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】FOLLAFOSS-雙人床框', '8490', '218', '161', '90', 'ikea', '5', 'https://www.ikea.com/tw/zh/catalog/products/S19281934/');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】TARVA-雙人床框', '4990', '209', '160', '92', 'ikea', '5', 'https://www.ikea.com/tw/zh/catalog/products/S09198515/');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】BÖRJE-餐椅', '1490', '44', '55', '100', 'ikea', '2', 'https://www.ikea.com/tw/zh/catalog/products/40410793/');
-
+asd
 
 /*wish_list*/
 INSERT INTO `ikea`.`wish_list` (`mid`, `pid`) VALUES ('3', '2');
