@@ -47,3 +47,21 @@ exports.getUpdateProduct = async (req, res, next) => {
         })
         .catch(err => console.log(err));
 };
+
+exports.getAddProduct = async (req, res, next) => {
+    const addProductById = await Product.add(req, res)
+        .then(([rows]) => {
+            res.redirect('/');
+        })
+        .catch(err => console.log(err));
+};
+
+/* DELETE *****************************/
+
+exports.getDeleteProduct = async (req, res, next) => {
+    const addProductById = await Product.deleteById(req, res)
+        .then(([rows]) => {
+            res.redirect('/');
+        })
+        .catch(err => console.log(err));
+};

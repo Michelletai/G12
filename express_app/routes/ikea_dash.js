@@ -7,5 +7,7 @@ const ikeaprodController = require('../controllers/ikea_product');
 router.get('/', ikeadashController.getDashboard);
 router.get('/edit', ikeaprodController.getEditProduct);
 router.post('/update', ikeaprodController.getUpdateProduct);
+router.post('/add', ikeaprodController.getAddProduct);
+router.get('/delete', ikeaprodController.getDeleteProduct);
 
 module.exports = router;
