@@ -11,7 +11,7 @@
     <title>Bootstrap Theme</title>
     <script>
         function Edit(id) {
-            window.location.href = "/post/edit?id=" + id;
+            window.location.href = "/edit?id=" + id;
         }
     </script>
 </head>
@@ -107,9 +107,8 @@
                             <thead class="thead-dark">
                                 <tr>
                                     <th>#</th>
-                                    <th>Title</th>
-                                    <th>Category</th>
-                                    <th>Date</th>
+                                    <th>類別名稱</th>
+                                    <th>動作</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -123,8 +122,8 @@
                                             <%= categories[i].name %>
                                         </td>
                                         <td>
-                                            <button value="Details" class="btn btn-secondary" onclick="Edit('<%= categories[i].id %>')">
-                                                <i class="fas fa-angle-double-right"></i> Details
+                                            <button value="編輯" class="btn btn-secondary" onclick="Edit('<%= categories[i].id %>')">
+                                                <i class="fas fa-angle-double-right"></i> 編輯
                                             </button>
                                         </td>
                                     </tr>

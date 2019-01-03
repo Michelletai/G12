@@ -122,37 +122,25 @@
                             <thead class="thead-dark">
                                 <tr>
                                     <th>#</th>
-                                    <th>產品</th>
-                                    <th>標價</th>
-                                    <th>品牌</th>
-                                    <th>分類</th>
+                                    <th>類別</th>
                                     <th>來源網址</th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <% for(var i=0; i< product.length; i++) { %>
+                                <% for(var i=0; i< categories.length; i++) { %>
                                     <tr>
                                         <td>
-                                            <%= product[i].id %>
+                                            <%= categories[i].id %>
                                         </td>
                                         <td>
-                                            <%= product[i].name %>
+                                            <%= categories[i].name %>
                                         </td>
                                         <td>
-                                            <%= product[i].price %>
+                                            <a href="<%= categories[i].source %>">點我前往</a>
                                         </td>
                                         <td>
-                                            <%= product[i].vendor %>
-                                        </td>
-                                        <td>
-                                            <%= product[i].cname %>
-                                        </td>
-                                        <td>
-                                            <a href="<%= product[i].source %>">點我前往</a>
-                                        </td>
-                                        <td>
-                                            <button value="Details" class="btn btn-secondary" onclick="editProduct('<%= product[i].id %>')">
+                                            <button value="Details" class="btn btn-secondary" onclick="editProduct('<%= categories[i].id %>')">
                       <i class="fas fa-angle-double-right"></i> 編輯
                     </button>
                                         </td>
