@@ -26,6 +26,10 @@ module.exports = class Member {
     return db.execute('SELECT * FROM product where id = ?', [id]);
   }
   
+  static getCount() {
+    return db.execute('SELECT COUNT(*) as count FROM product');
+  }
+
   // UPDATE
   static updateById(req, res) {
     console.log('update:'+'id'+req.body.id);
@@ -45,15 +49,31 @@ module.exports = class Member {
     );
   }
 
-  // DELETE
-  static deleteById(id) {
+  // ADD
+  static add(req, res){
+    console.log('add:'+'name'+req.body.name);
+    console.log(req.body);
+    const name = req.body.name;
+    const price = req.body.price;
+    const width = req.body.width;
+    const depth = req.body.depth;
+    const height = req.body.height;
+    const vendor = req.body.vendor;
+    const category_id = req.body.category_id;
+    //const date = new Date();
+    const source = req.body.source;
+    console.log('model:add()', name, price, width, depth, height, vendor, category_id, source);
     return db.execute(
-      'DELETE FROM product WHERE id = ?', [id]
+      'INSERT INTO ikea.product ( name, price, width, depth, height, vendor, category_id, source) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?)', [name, price, width, depth, height, vendor, category_id, source]
     );
   }
 
-
-  static getCount() {
-    return db.execute('SELECT COUNT(*) as count FROM product');
+  // DELETE
+  static deleteById(req, res) {
+    const id = req.query.id;
+    console.log('DELETE'+'id:'+id);
+    return db.execute(
+      'DELETE FROM product WHERE id = ?', [id]
+    );
   }
 };

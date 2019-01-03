@@ -15,4 +15,5 @@ module.exports = class Category {
     static getCount() {
         return db.execute('SELECT COUNT(*) as count FROM category');
     }
+    
 }

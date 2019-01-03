@@ -14,4 +14,13 @@ module.exports = class Category {
     static getCount() {
         return db.execute('SELECT COUNT(*) as count FROM category');
     }
+
+    // ADD
+    static add(req, res){
+        console.log('add-category-'+'name:'+req.body.category_name);
+        const name = req.body.category_name;
+        return db.execute(
+            'INSERT INTO ikea.category (name) VALUES ( ? )', [name]
+        );
+    }
 }

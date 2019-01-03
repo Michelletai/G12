@@ -17,6 +17,10 @@
         function addPost() {
             document.getElementById("addPost").submit();
         }
+
+        function addCategory() {
+            document.getElementById("addCategory").submit();
+        }
     </script>
 </head>
 
@@ -87,7 +91,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="/post/add" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addPostModal">
+                    <a href="/add" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addPostModal">
                         <i class="fas fa-plus"></i> 新商品
                     </a>
                 </div>
@@ -224,27 +228,27 @@
           </button>
                 </div>
                 <div class="modal-body">
-                    <form id="addPost" action="/post/add" method="post">
+                    <form id="addPost" action="/add" method="post">
                         <div class="form-group">
                             <label for="name">商品名稱</label>
-                            <input type="text" name="name" class="form-control" value="" placeholder="name">
+                            <input type="text" name="name" class="form-control" value="" placeholder="商品名稱">
                         </div>
                         <div class="form-group">
                             <label for="price">價格</label>
-                            <input type="text" name="price" class="form-control" value="" placeholder="price">
+                            <input type="text" name="price" class="form-control" value="" placeholder="價格">
                         </div>
                         <div class="form-group row">
                             <div class="col-md-3">
                                 <label for="width">規格-寬</label>
-                                <input name="width" type="text" id="width" class="form-control" value="<%= product[0].width %>">
+                                <input name="width" type="text" id="width" class="form-control" value="">
                             </div>
                             <div class="col-md-3">
                                 <label for="depth">規格-深</label>
-                                <input name="depth" type="text" id="depth" class="form-control" value="<%= product[0].depth %>">
+                                <input name="depth" type="text" id="depth" class="form-control" value="">
                             </div>
                             <div class="col-md-3">
                                 <label for="height">規格-長</label>
-                                <input name="height" type="text" id="height" class="form-control" value="<%= product[0].height %>">
+                                <input name="height" type="text" id="height" class="form-control" value="">
                             </div>
                             <div class="col-md-3">
                                 <div class="align-self-start">
@@ -257,24 +261,24 @@
                         </div>
                         <div class="form-group">
                             <label for="vendor">品牌</label>
-                            <input type="text" name="vendor" class="form-control" value="" placeholder="vendor">
-                        </div>
-                        <div class="form-group">
-                            <label for="source">來源</label>
-                            <input type="text" name="source" class="form-control" value="" placeholder="source">
+                            <input type="text" name="vendor" class="form-control" value="" placeholder="品牌">
                         </div>
                         <div class="form-group">
                             <label for="category">Category</label>
-                            <select class="form-control" name="category">
-                <% 
-                  for ( var i = 0 ; i < categories.length ; i++){ 
-                    var selected = ( i==0 ) ? "selected" : "";
-                %>
-                <option value="<%= categories[i].id %>" <%=selected %>>
-                  <%= categories[i].name %>
-                </option>
-                <% } %>
-              </select>
+                            <select class="form-control" name="category_id">
+                                <% 
+                                for ( var i = 0 ; i < categories.length ; i++){ 
+                                    var selected = ( i==0 ) ? "selected" : "";
+                                %>
+                                <option value="<%= categories[i].id %>" <%=selected %>>
+                                <%= categories[i].name %>
+                                </option>
+                                <% } %>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="source">來源</label>
+                            <input type="text" name="source" class="form-control" value="" placeholder="來源">
                         </div>
                         <!-- <div class="form-group">
               <label for="image">Upload Image</label>
@@ -284,10 +288,6 @@
               </div>
               <small class="form-text text-muted">Max Size 3mb</small>
             </div> -->
-                        <div class="form-group">
-                            <label for="body">Body</label>
-                            <textarea name="editor1" class="form-control"></textarea>
-                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -304,19 +304,19 @@
                 <div class="modal-header bg-success text-white">
                     <h5 class="modal-title">Add Category</h5>
                     <button class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
+                        <span>&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="addCategory" action="/addcategory" method="post">
                         <div class="form-group">
-                            <label for="title">Title</label>
-                            <input type="text" class="form-control">
+                            <label for="name">類別</label>
+                            <input name="category_name" type="text" id="name" class="form-control" value="">
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-success" data-dismiss="modal">Save Changes</button>
+                    <button class="btn btn-success" data-dismiss="modal" onclick="addCategory()">Save Changes</button>
                 </div>
             </div>
         </div>

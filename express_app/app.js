@@ -9,7 +9,12 @@ var usersRouter = require('./routes/users');
 
 const postRouter = require('./routes/post');
 const accountRouter = require('./routes/account');
+
 const ikeaRouter = require('./routes/ikea_dash');
+const categoryRouter = require('./routes/ikea_category');
+
+
+
 
 var app = express();
 
@@ -28,6 +33,9 @@ app.use('/dashboard', dashboardRouter);
 app.use('/post', postRouter);
 app.use('/users', usersRouter);
 app.use('/404411687', accountRouter);
+
+app.use('/category', categoryRouter);
+
 
 
 // catch 404 and forward to error handler
