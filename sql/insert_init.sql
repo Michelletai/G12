@@ -26,6 +26,9 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('MEADE米德簡約風舒適懶骨頭腳凳', '999', '47', '66', '38', '東稻家居', '4', 'https://www.hdlife.com.tw/ItemInfo/18450');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('CHIKA千夏和風超微粒舒適懶人沙發(圓形)', '4999', '72', '72', '64', '東稻家居', '4', 'https://www.hdlife.com.tw/ItemInfo/6131');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('LEVI李維工業風個性鐵架書架型書桌', '2499', '100', '50', '92', '東稻家居', '3', 'https://www.hdlife.com.tw/ItemInfo/12587');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('經典回憶小鴨書桌', '4088', '90', '60', '165', '時尚屋', '3', 'https://mall.pchome.com.tw/prod/QFAA9N-A9008GDV0?fq=/S/QFAB6N');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('白板書架收納書桌', '3688', '90', '88', '165', '生活市集', '3', 'https://www.buy123.com.tw/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('無印生活床頭櫃', '2899', '45', '35', '60', '東稻家居', '1', 'https://www.hdlife.com.tw/ItemInfo/19341');
 
 
 /*wish_list*/
