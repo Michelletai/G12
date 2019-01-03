@@ -13,11 +13,11 @@
   <title>Bootstrap Theme</title>
   <script>
     function savePost() {
-            document.getElementById("savePost").submit();
-        }
-        function deletePost(id) {
-            window.location.href = "/post/delete?id=" + id;
-        }    
+        document.getElementById("savePost").submit();
+    }
+    function deletePost(id) {
+        window.location.href = "/post/delete?id=" + id;
+    }    
   </script>
 </head>
 
@@ -114,7 +114,7 @@
               <h4>編輯商品</h4>
             </div>
             <div class="card-body">
-              <form id="savePost" action="/post/update" method="post">
+              <form id="savePost" action="/update" method="post">
                 <input type="hidden" name="id" value="<%= product[0].id %>">
                 <div class="form-group">
                   <label for="name"> 商品名稱</label>
@@ -127,17 +127,39 @@
                 </div>
                 <div class="form-group">
                   <label for="vendor">品牌</label>
-                  <input name="vendor" type="text" id="vendor" class="form-control" value="<%= product[0].vendor %>">
+                  <input name="vendor" type="text" id="vendorr" class="form-control" value="<%= product[0].vendor %>">
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-3">
+                    <label for="width">規格-寬</label>
+                    <input name="width" type="text" id="width" class="form-control" value="<%= product[0].width %>">
+                  </div>
+                  <div class="col-md-3">
+                    <label for="depth">規格-深</label>
+                    <input name="depth" type="text" id="depth" class="form-control" value="<%= product[0].depth %>">
+                  </div>
+                  <div class="col-md-3">
+                    <label for="height">規格-長</label>
+                    <input name="height" type="text" id="height" class="form-control" value="<%= product[0].height %>">
+                  </div>
+                  <div class="col-md-3">
+                    <div class="align-self-start">
+                      <label for="unit"></label>
+                    </div>
+                    <div class="align-self-end">
+                      <label for="unit">公分(cm)</label>
+                    </div>
+                  </div>
                 </div>
                 <div class="form-group">
                   <label for="category">分類</label>
-                  <select class="form-control" name="category">
+                  <select class="form-control" name="category_id">
                     <% 
                       for ( var i = 0 ; i < categories.length ; i++){ 
                         var selected = ( product[0].category_id == categories[i].id ) ? "selected" : "";
                         console.log('selected:', 'i:', i, selected, '分類號碼',product[0].category_id, categories[i].name)
                     %>
-                    <option value="<%= categories[i].id %>" <%= selected %>>
+                    <option value="<%= categories[i].id %>" <%= selected %> >
                       <%= categories[i].name %>
                     </option>
                     <% } %>
@@ -152,10 +174,8 @@
                   <small class="form-text text-muted">Max Size 3mb</small>
                 </div> -->
                 <div class="form-group">
-                  <label for="body">來源網址</label>
-                  <textarea name="editor1" class="form-control">
-                    <%= product[0].source %>
-                  </textarea>
+                  <label for="source">來源網址</label>
+                  <input name="source" class="form-control" value="<%= product[0].source %>">
                 </div>
               </form>
             </div>

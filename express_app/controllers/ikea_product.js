@@ -37,3 +37,13 @@ exports.getEditProduct = async (req, res, next) => {
    });
 
 };
+
+/* WRITE *****************************/
+
+exports.getUpdateProduct = async (req, res, next) => {
+    const updateProductById = await Product.updateById(req, res)
+        .then(([rows]) => {
+            res.redirect('/');
+        })
+        .catch(err => console.log(err));
+};

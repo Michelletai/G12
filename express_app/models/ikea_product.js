@@ -26,6 +26,25 @@ module.exports = class Member {
     return db.execute('SELECT * FROM product where id = ?', [id]);
   }
   
+  // UPDATE
+  static updateById(req, res) {
+    console.log('update:'+'id'+req.body.id);
+    const id = req.body.id;
+    const name = req.body.name;
+    const price = req.body.price;
+    const width = req.body.width;
+    const depth = req.body.depth;
+    const height = req.body.height;
+    const vendor = req.body.vendor;
+    const category_id = req.body.category_id;
+    //const date = new Date();
+    const source = req.body.source;
+    console.log('model:updateById()', id, name, price, width, depth, height, vendor, category_id, source);
+    return db.execute(
+      'UPDATE product SET name = ?, price = ?, width = ?, depth = ?, height = ?, vendor = ?, category_id = ?, source = ? WHERE id= ?', [name, price, width, depth, height, vendor, category_id, source,id]
+    );
+  }
+
   // DELETE
   static deleteById(id) {
     return db.execute(
