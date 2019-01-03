@@ -17,6 +17,10 @@
         function addPost() {
             document.getElementById("addPost").submit();
         }
+
+        function addCategory() {
+            document.getElementById("addCategory").submit();
+        }
     </script>
 </head>
 
@@ -304,15 +308,15 @@
           </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="addCategory" action="/addcategory" method="post">
                         <div class="form-group">
-                            <label for="title">Title</label>
-                            <input type="text" class="form-control">
+                            <label for="name">類別</label>
+                            <input name="category_name" id="category_name" type="text" class="form-control" value="">
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-success" data-dismiss="modal">Save Changes</button>
+                    <button class="btn btn-success" data-dismiss="modal" onclick="addCategory()">Save Changes</button>
                 </div>
             </div>
         </div>
