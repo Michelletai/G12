@@ -11,6 +11,7 @@ const postRouter = require('./routes/post');
 const accountRouter = require('./routes/account');
 const ikeaRouter = require('./routes/ikea_dash');
 const ikeacateRouter = require('./routes/ikea_category');
+const ikeamemRouter = require('./routes/ikea_member');
 
 var app = express();
 
@@ -31,6 +32,7 @@ app.use('/users', usersRouter);
 app.use('/404411687', accountRouter);
 
 app.use('/category', ikeacateRouter);
+app.use('/member', ikeamemRouter);
 
 
 // catch 404 and forward to error handler

@@ -71,6 +71,7 @@ module.exports = class Member {
   // DELETE
   static deleteById(req, res) {
     const id = req.query.id;
+    db.execute('DELETE FROM `ikea`.`wish_list` WHERE pid = ?',[id]);  // 先刪除我的最愛中有跟此商品有關的項目
     return db.execute(
       'DELETE FROM product WHERE id = ?', [id]
     );

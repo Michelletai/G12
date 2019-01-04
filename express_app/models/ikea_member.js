@@ -13,7 +13,7 @@ module.exports = class member {
   static add(req, res) {
     //console.log('add():', req.body.name, req.body.price);
     return db.execute(
-      'INSERT INTO post (title, category, date, article) VALUES (?, ?, ?, ?)',
+      'INSERT INTO member (title, category, date, article) VALUES (?, ?, ?, ?)',
       [req.body.title, req.body.category, req.body.date, req.body.editor1]
     );
   }
