@@ -13,6 +13,8 @@ module.exports = class Member {
         // 獲取client端資料
         const memberData = {
             name: req.body.name,
+            sex: req.body.sex,
+            address: req.body.address,
             email: req.body.email,
             password: password,
             create_date: onTime()
