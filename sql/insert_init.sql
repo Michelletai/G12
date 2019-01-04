@@ -51,7 +51,7 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】KLIPPAN 雙人座沙發', '5990', '180', '88', '66', 'ikea', '4', 'https://www.ikea.com/tw/zh/catalog/products/S89251778/');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】GALANT 附門收納櫃', '6990', '80', '45', '120', 'ikea', '1', 'https://www.ikea.com/tw/zh/catalog/products/30365140/');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】SVÄRTA 上下舖床框', '7990', '208', '97', '159', 'ikea', '5', 'https://www.ikea.com/tw/zh/catalog/products/90247974/');
-
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('FL 質感亞麻灰扶手布單椅 / 餐椅', '5400', '58', '64', '83', '滿屋生活 Full Living', '2', 'https://www.full-living.com.tw/main/living-room/chairs/5548a-detail.html');
 
 
 
