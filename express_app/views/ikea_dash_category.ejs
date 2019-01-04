@@ -11,7 +11,7 @@
     <title>家具查價網</title>
     <script>
         function editProduct(id) {
-            window.location.href = "/edit?id=" + id;
+            window.location.href = "/category/edit?id=" + id;
         }
 
         function addPost() {
@@ -34,19 +34,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav">
                     <li class="nav-item px-2">
-                        <a href="/" class="nav-link active">首頁</a>
+                        <a href="/" class="nav-link">商品</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a href="/post" class="nav-link">Posts</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a href="/category" class="nav-link">Categories</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a href="/user" class="nav-link">Users</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a href="/404411687" class="nav-link">Account</a>
+                        <a href="/category" class="nav- active">類別</a>
                     </li>
                 </ul>
 
@@ -80,7 +71,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h1>
-                        <i class="fas fa-couch"></i> 首頁</h1>
+                        <i class="fas fa-couch"></i> 類別</h1>
                 </div>
             </div>
         </div>
@@ -123,7 +114,7 @@
                                 <tr>
                                     <th>#</th>
                                     <th>類別</th>
-                                    <th>來源網址</th>
+                                    <th></th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -135,9 +126,6 @@
                                         </td>
                                         <td>
                                             <%= categories[i].name %>
-                                        </td>
-                                        <td>
-                                            <a href="<%= categories[i].source %>">點我前往</a>
                                         </td>
                                         <td>
                                             <button value="Details" class="btn btn-secondary" onclick="editProduct('<%= categories[i].id %>')">

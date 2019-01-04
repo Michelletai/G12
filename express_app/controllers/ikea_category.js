@@ -61,6 +61,36 @@ exports.getDashboard = async (req, res, next) => {
   });
 };
 
+exports.getCategoryInfo = async (req, res, next) => {
+
+  let categories;
+  let categoryCount;
+
+  const getCategories = await Category.findById(req.query.id)
+    .then(([rows]) => {
+      for (let p of rows) {
+        p.date = moment(p.date).format('MMM D, YYYY');
+      }
+      categories = rows;
+    })
+
+  const getCategoryCount = await Category.getCount()
+    .then(([rows]) => {
+      categoryCount = rows[0].count;
+    })
+
+  let data = {
+    categories: categories,
+    categoryCount: categoryCount
+  }
+  
+  res.render('ikea_category_details', {
+    title: '類別',
+    categories: categories,
+    categoryCount: categoryCount
+  });  
+}
+
 /* WRITE *****************************/
 
 exports.getAddCategory = async (req, res, next) => {
@@ -70,3 +100,14 @@ exports.getAddCategory = async (req, res, next) => {
       })
       .catch(err => console.log(err));
 };
+
+/* DELETE *****************************/
+
+exports.getDeleteCategory = async (req, res, next) => {
+  const addProductById = await Category.deleteById(req, res)
+      .then(([rows]) => {
+          res.redirect('/category');
+      })
+      .catch(err => console.log(err));
+};
+
