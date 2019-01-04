@@ -55,7 +55,7 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('FL 現代山毛櫸木灰色布餐椅 ', '6800', '49', '57', '78', '滿屋生活 Full Living', '2', 'https://www.full-living.com.tw/main/living-room/chairs/5575s-1458-detail.html');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('ICHIBA 日系工業復古皮革單椅', '5800', '45', '50', '70.5', 'ICHIBA', '2', 'https://www.full-living.com.tw/main/living-room/chairs/anc-2552br-detail.html');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('ICHIBA 日系皮革升降辦公椅', '7500', '68.5', '73', '82.5', 'ICHIBA', '2', 'https://www.full-living.com.tw/main/living-room/chairs/ch-2800dbr-be-detail.html');
-
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('Zero Chair 零重力休閒椅', '2980', '55', '81.5', '96', '安得士 ATEX', '2', 'https://www.full-living.com.tw/main/living-room/chairs/hit200br-gr-detail.html');
 
 
 /*wish_list*/
