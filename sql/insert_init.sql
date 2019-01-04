@@ -64,6 +64,8 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('FL 吉維斯- 美式鄉村風實木餐桌', '8200', '140', '85', '76', '滿屋生活 Full Living', '3', 'https://full-living.com.tw/main/fullliving-diningtable/s092-dt01-1195-detail.html');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('FL 北歐簡約圓角實木餐桌', '8200', '90', '153', '76', '滿屋生活 Full Living', '3', 'https://full-living.com.tw/main/fullliving-diningtable/5575-detail.html');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('FL 四角斜邊橡木餐桌', '9300', '183', '102', '75', '滿屋生活 Full Living', '3', 'https://full-living.com.tw/main/fullliving-diningtable/ts201407001-111-271-275-detail.html');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】NORDBY 餐桌', '4490', '125', '75', '75', 'ikea', '3', 'https://www.ikea.com/tw/zh/catalog/products/60237783/');
+
 
 
 /*wish_list*/
