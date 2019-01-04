@@ -93,10 +93,18 @@ exports.getCategoryInfo = async (req, res, next) => {
 
 /* WRITE *****************************/
 
+exports.getUpdateCategory = async (req, res, next) => {
+  const updateProductById = await Category.updateById(req, res)
+      .then(([rows]) => {
+          res.redirect('/category');
+      })
+      .catch(err => console.log(err));
+};
+
 exports.getAddCategory = async (req, res, next) => {
   const addProductById = await Category.add(req, res)
       .then(([rows]) => {
-          res.redirect('/');
+          res.redirect('/category');
       })
       .catch(err => console.log(err));
 };

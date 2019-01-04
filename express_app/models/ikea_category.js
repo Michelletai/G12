@@ -19,6 +19,18 @@ module.exports = class Category {
         return db.execute('SELECT COUNT(*) as count FROM category');
     }
 
+    // UPDATE
+    static updateById(req, res) {
+        console.log('update:'+'id'+req.body.id);
+        const id = req.body.id;
+        const name = req.body.name;
+        console.log('model:categoroy_updateById()', id, name);
+        return db.execute(
+        'UPDATE category SET name = ? WHERE id= ?', [name,id]
+        );
+    }
+
+
     // ADD
     static add(req, res){
         console.log(req.body);

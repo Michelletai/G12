@@ -7,6 +7,7 @@ const ikeacateController = require('../controllers/ikea_category');
 router.get('/', ikeacateController.getDashboard);
 router.get('/edit', ikeacateController.getCategoryInfo);
 router.get('/delete', ikeacateController.getDeleteCategory);
+router.post('/update', ikeacateController.getUpdateCategory);
 
 
 

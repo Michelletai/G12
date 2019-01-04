@@ -24,23 +24,17 @@
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
     <div class="container">
-      <a href="index.html" class="navbar-brand">Blogen</a>
+      <a href="/" class="navbar-brand">家具查詢網</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav">
           <li class="nav-item px-2">
-            <a href="index.html" class="nav-link">Dashboard</a>
+            <a href="/" class="nav-link">商品</a>
           </li>
           <li class="nav-item px-2">
-            <a href="posts.html" class="nav-link">Posts</a>
-          </li>
-          <li class="nav-item px-2">
-            <a href="categories.html" class="nav-link">Categories</a>
-          </li>
-          <li class="nav-item px-2">
-            <a href="users.html" class="nav-link">Users</a>
+            <a href="/category" class="nav-link">類別</a>
           </li>
         </ul>
 
@@ -114,7 +108,7 @@
               <h4>編輯類別</h4>
             </div>
             <div class="card-body">
-              <form id="savePost" action="/update" method="post">
+              <form id="savePost" action="/category/update" method="post">
                 <input type="hidden" name="id" value="<%= categories[0].id %>">
                 <div class="form-group">
                   <label for="name"> 類別名稱</label>
