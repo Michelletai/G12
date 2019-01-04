@@ -62,6 +62,9 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('FL Lavender blue 混織慵藍-鉚釘實木高背床架', '14500', '163', '204', '126', '滿屋生活 Full Living', '5', 'https://full-living.com.tw/main/fullliving-bed/p15bd02bl0203-589-detail.html');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('FL Morpheus 穆斯-美式暖棕實木床架', '7000', '160', '201', '18', '滿屋生活 Full Living', '5', 'https://full-living.com.tw/main/fullliving-bed/fl-morpheus-%E7%A9%86%E6%96%AF-%E7%BE%8E%E5%BC%8F%E6%9A%96%E6%A3%95%E5%AF%A6%E6%9C%A8%E5%BA%8A%E6%9E%B6-detail.html');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('FL 吉維斯- 美式鄉村風實木餐桌', '8200', '140', '85', '76', '滿屋生活 Full Living', '3', 'https://full-living.com.tw/main/fullliving-diningtable/s092-dt01-1195-detail.html');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('FL 北歐簡約圓角實木餐桌', '8200', '90', '153', '76', '滿屋生活 Full Living', '3', 'https://full-living.com.tw/main/fullliving-diningtable/5575-detail.html');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('FL 四角斜邊橡木餐桌', '9300', '183', '102', '75', '滿屋生活 Full Living', '3', 'https://full-living.com.tw/main/fullliving-diningtable/ts201407001-111-271-275-detail.html');
+
 
 /*wish_list*/
 INSERT INTO `ikea`.`wish_list` (`mid`, `pid`) VALUES ('3', '2');
