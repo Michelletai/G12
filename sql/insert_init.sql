@@ -33,6 +33,7 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('原木色實木四層架', '2299', '78', '41', '115', '東稻家居', '1', 'https://www.hdlife.com.tw/ItemInfo/20443');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('高背網布辦公椅黑', '3299', '61', '61', '130', '東稻家居', '2', 'https://www.hdlife.com.tw/ItemInfo/21465');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('COCOA可可連結式彈簧懶人床', '4299', '97', '195', '35', '東稻家居', '5', 'https://www.hdlife.com.tw/ItemInfo/17700');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《NITORI》Hil2 布質單人沙發', '6700', '72', '88', '91', 'NITORI', '4', 'https://www.nitori-net.tw/Goods/ItemDetail_1130343_01.htm');
 
 
 
