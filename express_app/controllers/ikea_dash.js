@@ -63,7 +63,7 @@ exports.getDashboard = async (req, res, next) => {
       userCount: userCount
     }
 
-    console.log(JSON.stringify(data));
+    //console.log(JSON.stringify(data));
     //res.send(JSON.stringify(data));
 
     res.render('ikea_dash', {
