@@ -39,6 +39,9 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《NITORI》ALNUS LBR/LGY 榿木餐椅', '2490', '45', '50.5', '74.5', 'NITORI', '2', 'https://www.nitori-net.tw/Goods/ItemDetail_4019850_01.htm');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《NITORI》ALAND 長凳', '3380', '107', '38', '45', 'NITORI', '2', 'https://www.nitori-net.tw/Goods/ItemDetail_4010123_01.htm');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《NITORI》GRAND 布質3人沙發', '11000', '186', '97', '87', 'NITORI', '4', 'https://www.nitori-net.tw/Goods/ItemDetail_1101255_01.htm');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《NITORI》MELLISSA3  MDF板單人床架', '6700', '105', '189', '85', 'NITORI', '5', 'https://www.nitori-net.tw/Goods/ItemDetail_2012970_01.htm');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《NITORI》N BAHAMA 雙人床座 (橡膠木,鋼)', '5990', '156', '196', '90', 'NITORI', '5', 'https://www.nitori-net.tw/Goods/ItemDetail_2208570_01.htm');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《NITORI》RANDAM 120LC 拼色矮整理衣櫃', '6990', '120', '43', '76', 'NITORI', '1', 'https://www.nitori-net.tw/Goods/ItemDetail_0540978_01.htm');
 
 
 
