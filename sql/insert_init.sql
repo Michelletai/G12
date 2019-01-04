@@ -47,6 +47,10 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】BRIMNES 玻璃門櫃', '5990', '85', '35 ', '190', 'ikea', '1', 'https://www.ikea.com/tw/zh/catalog/products/30409889/');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】NORRARYD 吧台椅附靠背', '3490', '46', '47', '103', 'ikea', '2', 'https://www.ikea.com/tw/zh/catalog/products/70408449/');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】MARTIN 餐椅', '890', '49', '52', '86', 'ikea', '2', 'https://www.ikea.com/tw/zh/catalog/products/S89219528/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】EKENÄSET 雙人座沙發', '7990', '118.5', '78', '75', 'ikea', '4', 'https://www.ikea.com/tw/zh/catalog/products/10331373/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】KLIPPAN 雙人座沙發', '5990', '180', '88', '66', 'ikea', '4', 'https://www.ikea.com/tw/zh/catalog/products/S89251778/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】GALANT 附門收納櫃', '6990', '80', '45', '120', 'ikea', '1', 'https://www.ikea.com/tw/zh/catalog/products/30365140/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】SVÄRTA 上下舖床框', '7990', '208', '97', '159', 'ikea', '5', 'https://www.ikea.com/tw/zh/catalog/products/90247974/');
 
 
 
