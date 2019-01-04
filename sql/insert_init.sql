@@ -42,6 +42,13 @@ INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vend
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《NITORI》MELLISSA3  MDF板單人床架', '6700', '105', '189', '85', 'NITORI', '5', 'https://www.nitori-net.tw/Goods/ItemDetail_2012970_01.htm');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《NITORI》N BAHAMA 雙人床座 (橡膠木,鋼)', '5990', '156', '196', '90', 'NITORI', '5', 'https://www.nitori-net.tw/Goods/ItemDetail_2208570_01.htm');
 INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('《NITORI》RANDAM 120LC 拼色矮整理衣櫃', '6990', '120', '43', '76', 'NITORI', '1', 'https://www.nitori-net.tw/Goods/ItemDetail_0540978_01.htm');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】FJÄLLBO 咖啡桌', '2495', '90', '46', '46', 'ikea', '3', 'https://www.ikea.com/tw/zh/catalog/products/30340381/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】FJÄLLBO 電視櫃', '4995', '150', '36', '54', 'ikea', '1', 'https://www.ikea.com/tw/zh/catalog/products/30339293/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】BRIMNES 玻璃門櫃', '5990', '85', '35 ', '190', 'ikea', '1', 'https://www.ikea.com/tw/zh/catalog/products/30409889/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】NORRARYD 吧台椅附靠背', '3490', '46', '47', '103', 'ikea', '2', 'https://www.ikea.com/tw/zh/catalog/products/70408449/');
+INSERT INTO `ikea`.`product` (`name`, `price`, `width`, `depth`, `height`, `vendor`, `category_id`, `source`) VALUES ('【ikea】MARTIN 餐椅', '890', '49', '52', '86', 'ikea', '2', 'https://www.ikea.com/tw/zh/catalog/products/S89219528/');
+
+
 
 
 
