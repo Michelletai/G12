@@ -27,7 +27,7 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
         <div class="container">
-            <a href="/" class="navbar-brand">家具查價網</a>
+            <a href="/" class="navbar-brand"><i class="fas fa-tags"></i> 家具查價網</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,7 +37,10 @@
                         <a href="/" class="nav-link">商品</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a href="/category" class="nav-link active">類別</a>
+                        <a href="/category" class="nav-link">類別</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="/member" class="nav-link active">會員</a>
                     </li>
                 </ul>
 
@@ -117,7 +120,6 @@
                                     <th>性別</th>
                                     <th>地址</th>
                                     <th>郵箱</th>
-                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -138,11 +140,6 @@
                                         <td>
                                             <%= member[i].email %>
                                         </td>
-                                        <td>
-                                            <button value="Details" class="btn btn-secondary" onclick="editProduct('<%= member[i].id %>')">
-                      <i class="fas fa-angle-double-right"></i> 編輯
-                    </button>
-                                        </td>
                                     </tr>
                                     <% } %>
                             </tbody>
@@ -157,7 +154,7 @@
                                 <i class="fas fa-pencil-alt"></i>
                                 <%= productCount %>
                             </h4>
-                            <a href="/post" class="btn btn-outline-light btn-sm">View</a>
+                            <a href="/" class="btn btn-outline-light btn-sm">View</a>
                         </div>
                     </div>
 
@@ -179,7 +176,7 @@
                                 <i class="fas fa-users"></i>
                                 <%= userCount %>
                             </h4>
-                            <a href="/user" class="btn btn-outline-light btn-sm">View</a>
+                            <a href="/member" class="btn btn-outline-light btn-sm">View</a>
                         </div>
                     </div>
                 </div>
