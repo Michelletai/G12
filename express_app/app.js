@@ -4,11 +4,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var dashboardRouter = require('./routes/dashboard');
-var usersRouter = require('./routes/users');
+ /***********************Sample*****************/
+var dashBoardRouter = require('./routes/sample/dashboard');
+var usersRouter = require('./routes/sample/users');
+var postRouter = require('./routes/sample/post');
+var accountRouter = require('./routes/sample/account');
+ /***********************Sample*****************/
 
-const postRouter = require('./routes/post');
-const accountRouter = require('./routes/account');
+
 const ikeaRouter = require('./routes/ikea_dash');
 const ikeacateRouter = require('./routes/ikea_category');
 const ikeamemRouter = require('./routes/ikea_member');
@@ -27,14 +30,17 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', ikeaRouter);
-app.use('/dashboard', dashboardRouter);
+app.use('/category', ikeacateRouter);
+app.use('/member', ikeamemRouter);
+
+ /***********************Sample*****************/
+app.use('/dashboard', dashBoardRouter);
 app.use('/post', postRouter);
 app.use('/users', usersRouter);
 app.use('/404411687', accountRouter);
+ /***********************Sample*****************/
 
 
-app.use('/category', ikeacateRouter);
-app.use('/member', ikeamemRouter);
 
 
 // catch 404 and forward to error handler
