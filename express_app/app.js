@@ -12,9 +12,9 @@ var accountRouter = require('./routes/sample/account');
  /***********************Sample*****************/
 
 
-const ikeaRouter = require('./routes/ikea_dash');
-const ikeacateRouter = require('./routes/ikea_category');
-const ikeamemRouter = require('./routes/ikea_member');
+const ikeaRouter = require('./routes/ikea_product');
+const ikeaCategoryRouter = require('./routes/ikea_category');
+const ikeaMemberRouter = require('./routes/ikea_member');
 
 
 var app = express();
@@ -30,8 +30,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', ikeaRouter);
-app.use('/category', ikeacateRouter);
-app.use('/member', ikeamemRouter);
+app.use('/category', ikeaCategoryRouter);
+app.use('/member', ikeaMemberRouter);
 
  /***********************Sample*****************/
 app.use('/dashboard', dashBoardRouter);
