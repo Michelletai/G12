@@ -52,7 +52,7 @@ exports.getMemberInfo = async (req, res, next) => {
     userCount: userCount
   }
   
-  res.render('ikea_dash_member', {
+  res.render('admin/ikea_dash_member', {
     title: '類別',
     member: member,
     categories: categories,

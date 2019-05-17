@@ -55,7 +55,7 @@ exports.getDashboard = async (req, res, next) => {
     console.log(JSON.stringify(data));
     //res.send(JSON.stringify(data));
 
-    res.render('dashboard', {
+    res.render('sample/dashboard', {
       title: 'Dashboard',
       color: 'btn-primary',
       icon: 'fa-cog',

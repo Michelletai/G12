@@ -12,9 +12,9 @@ var accountRouter = require('./routes/sample/account');
  /***********************Sample*****************/
 
 
-const ikeaRouter = require('./routes/ikea_product');
-const ikeaCategoryRouter = require('./routes/ikea_category');
-const ikeaMemberRouter = require('./routes/ikea_member');
+const ikeaRouter = require('./routes/admin/ikea_product');
+const ikeaCategoryRouter = require('./routes/admin/ikea_category');
+const ikeaMemberRouter = require('./routes/admin/ikea_member');
 
 
 var app = express();
@@ -56,7 +56,7 @@ app.use(function(err, req, res, next) {
 
     // render the error page
     res.status(err.status || 500);
-    res.render('error');
+    res.render('sample/error');
 });
 
 module.exports = app;

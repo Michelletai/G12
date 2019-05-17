@@ -51,7 +51,7 @@ exports.getDashboard = async (req, res, next) => {
     userCount: userCount
   }
   
-  res.render('ikea_dash_category', {
+  res.render('admin/ikea_dash_category', {
     title: '類別',
     product: product,
     categories: categories,
@@ -84,7 +84,7 @@ exports.getCategoryInfo = async (req, res, next) => {
     categoryCount: categoryCount
   }
   
-  res.render('ikea_category_details', {
+  res.render('admin/ikea_category_details', {
     title: '類別',
     categories: categories,
     categoryCount: categoryCount

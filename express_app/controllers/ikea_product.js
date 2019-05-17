@@ -30,7 +30,7 @@ exports.getEditProduct = async (req, res, next) => {
 
     console.log('product: ', JSON.stringify(product[0].date));
     
-    res.render('ikea_prod_details', {
+    res.render('admin/ikea_prod_details', {
         product: product,
         title: 'Edit Post',
         categories: categories

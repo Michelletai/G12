@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-const ikeadashController = require('../controllers/ikea_dash');
-const ikeaprodController = require('../controllers/ikea_product');
-const ikeacateController = require('../controllers/ikea_category');
+const ikeadashController = require('../../controllers/ikea_dash');
+const ikeaprodController = require('../../controllers/ikea_product');
+const ikeacateController = require('../../controllers/ikea_category');
 
 router.get('/', ikeadashController.getDashboard);
 router.get('/edit', ikeaprodController.getEditProduct);

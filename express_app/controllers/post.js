@@ -13,7 +13,7 @@ exports.getPosts = (req, res, next) => {
             }
             console.log(JSON.stringify(rows, ["id", "title", "date"]));
             //res.send(JSON.stringify(rows));
-            res.render('posts', {
+            res.render('sample/posts', {
                 data: rows,
                 title: 'Post List',
             });
@@ -46,7 +46,7 @@ exports.getEditPost = async (req, res, next) => {
 
     console.log('post: ', JSON.stringify(post[0].date));
     
-    res.render('details', {
+    res.render('sample/details', {
         data: post,
         title: 'Edit Post',
         categories: categories
