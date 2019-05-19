@@ -1,18 +1,20 @@
 const moment = require('moment');
 
-/*
-const Member = require('../../models/admin/ikea_member');
-const Product = require('../../models/admin/ikea_product');
-const Category = require('../../models/admin/ikea_category');
-const User = require('../../models/sample/user');
-*/
+const website = require('../../models/client/home_website');
 
 exports.getHome = async (req, res, next) => {
+  let websiteInfo;
+
   try {
+    const getWebsiteInfo = await website.fetchAll()
+    .then(([rows]) => {
+      websiteInfo = rows;
+    })
     res.render('client/home', {
       title: 'Dashboard',
       color: 'btn-primary',
-      icon: 'fa-cog'
+      icon: 'fa-cog',
+      websiteInfo: websiteInfo
     });
   } catch (err) {
     console.log(err);
