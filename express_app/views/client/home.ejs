@@ -58,18 +58,16 @@
 				<div id="features-wrapper">
 					<div class="container">
 						<div class="row">
-							<% for(var i=0; i < webSiteUrl.length; i++) { %>
+							<% for(var i=0; i < webSite.length; i++) { %>
 							<div class="col-4 col-12-medium">
 								<!-- Box -->
 									<section class="box feature">
 										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 										<div class="inner">
 											<header>
-												<h2><%= webSiteUrl[i].name %></h2>
-												<p>Maybe here as well I think</p>
+												<h2><%= webSite[i].name %></h2>
+												<p><%= (webSite[i].desc.substring(0,64) + '...') %></p>
 											</header>
-											
-											<p></p>
 										</div>
 									</section>
 							</div>
