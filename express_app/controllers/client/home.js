@@ -1,6 +1,6 @@
 const moment = require('moment');
 
-const website = require('../../models/client/home_website');
+const website = require('../../models/client/home_websiteinfo');
 
 exports.getHome = async (req, res, next) => {
   let websiteInfo;

@@ -20,7 +20,7 @@
 
 						<!-- Logo -->
 							<div id="logo">
-								<h1><a href="/client/">網頁導航網</a></h1>
+								<h1><a href="/client/">網頁導航</a></h1>
 								<span>by TKU_CSIE_GROUP-12-</span>
 							</div>
 
@@ -54,24 +54,6 @@
 					</header>
 				</div>
 
-			<!-- Banner -->
-				<div id="banner-wrapper">
-					<div id="banner" class="box container">
-						<div class="row">
-							<div class="col-7 col-12-medium">
-								<h2>Hi. This is Verti.</h2>
-								<p>It's a free responsive site template by HTML5 UP</p>
-							</div>
-							<div class="col-5 col-12-medium">
-								<ul>
-									<li><a href="#" class="button large icon fa-arrow-circle-right">Ok let's go</a></li>
-									<li><a href="#" class="button alt large icon fa-question-circle">More info</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			<!-- Features -->
 				<div id="features-wrapper">
 					<div class="container">
@@ -86,13 +68,34 @@
 												<h2><%= websiteInfo[i].name %></h2>
 												<p>Maybe here as well I think</p>
 											</header>
+											<% for(var i=0; i < websiteInfo.length; i++) { %>
 											<p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.</p>
+											<% } %>
 										</div>
 									</section>
 							</div>
 							<% } %>
 						</div>
 					</div>
+				</div>
+
+			<!-- Banner -->
+				<div id="banner-wrapper">
+					<div id="banner" class="box container">
+						<div class="row">
+							<div class="col-7 col-12-medium">
+								<h2>家具查價網</h2>
+							</div>
+							<div class="col-5 col-12-medium">
+								<ul>
+									<li><a href="/admin" class="button large icon fa-arrow-circle-right">前往</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="features-wrapper">
 				</div>
 
 			<!-- Main -->
