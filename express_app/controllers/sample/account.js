@@ -1,7 +1,7 @@
 const moment = require('moment');
 
-const Post = require('../models/account');
-const Category = require('../models/category');
+const Post = require('../../models/sample/account');
+const Category = require('../../models/sample/category');
 
 /* READ *****************************/
 

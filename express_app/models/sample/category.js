@@ -1,4 +1,4 @@
-const db = require('../util/database');
+const db = require('../../util/sample');
 
 module.exports = class Category {
     constructor(id, title, date) {

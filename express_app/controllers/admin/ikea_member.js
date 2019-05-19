@@ -1,9 +1,9 @@
 const moment = require('moment');
 
-const Member = require('../models/ikea_member');
-const Product = require('../models/ikea_product');
-const Category = require('../models/ikea_category');
-const User = require('../models/user');
+const Member = require('../../models/admin/ikea_member');
+const Product = require('../../models/admin/ikea_product');
+const Category = require('../../models/admin/ikea_category');
+const User = require('../../models/sample/user');
 
 /* READ *****************************/
 

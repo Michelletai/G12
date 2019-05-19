@@ -1,6 +1,6 @@
-const toRegister = require('../models/register_model');
-const Check = require('../service/member_check');
-const encryption = require('../models/encryption');
+const toRegister = require('../../models/admin/register_model');
+const Check = require('../../service/member_check');
+const encryption = require('../../models/admin/encryption');
 
 check = new Check();
 

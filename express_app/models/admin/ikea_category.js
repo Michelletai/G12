@@ -1,4 +1,4 @@
-const db = require('../util/ikea');
+const db = require('../../util/admin_ikea');
 
 module.exports = class Category {
     constructor(id, name) {

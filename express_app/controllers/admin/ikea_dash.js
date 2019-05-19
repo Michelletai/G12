@@ -1,30 +1,41 @@
 const moment = require('moment');
 
-const Post = require('../models/post');
-const Category = require('../models/category');
-const User = require('../models/user');
+const Member = require('../../models/admin/ikea_member');
+const Product = require('../../models/admin/ikea_product');
+const Category = require('../../models/admin/ikea_category');
+const User = require('../../models/sample/user');
 
 exports.getDashboard = async (req, res, next) => {
 
-  let posts;
-  let postCounts;
+  let product;
+  let productCounts;
   let categories;
   let categoryCount;
   let userCount;
 
   try {
-    const getPosts = await Post.fetchAll()
+    /*
+    const getPosts = await Member.fetchAll()
       .then(([rows]) => {
         for (let p of rows) {
           p.date = moment(p.date).format('MMM D, YYYY');
         }
         posts = rows;
       })
-    const getPostCount = await Post.getCount()
+    const getPostCount = await Member.getCount()
       .then(([rows]) => {
         postCount = rows[0].count;
       })
-
+    */
+    const getMember = await Product.fetchAllInfo()
+      .then(([rows]) => {
+        product = rows;
+      })
+    const getPostCount = await Product.getCount()
+      .then(([rows]) => {
+        productCount = rows[0].count;
+      })
+    
     const getCategories = await Category.fetchAll()
       .then(([rows]) => {
         for (let p of rows) {
@@ -45,24 +56,24 @@ exports.getDashboard = async (req, res, next) => {
       })
 
     let data = {
-      posts: posts,
+      product: product,
       categories: categories,
-      postCount: postCount,
+      productCount: productCount,
       categoryCount: categoryCount,
       userCount: userCount
     }
 
-    console.log(JSON.stringify(data));
+    //console.log(JSON.stringify(data));
     //res.send(JSON.stringify(data));
 
-    res.render('sample/dashboard', {
+    res.render('admin/ikea_dash', {
       title: 'Dashboard',
       color: 'btn-primary',
       icon: 'fa-cog',
-      data: posts,
+      product: product,
       categories: categories,
       categoryCount: categoryCount,
-      postCount: postCount,
+      productCount: productCount,
       userCount: userCount
     });
 

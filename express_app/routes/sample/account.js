@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const postController = require('../../controllers/account');
+const postController = require('../../controllers/sample/account');
 
 router.get('/', postController.getPosts);
 

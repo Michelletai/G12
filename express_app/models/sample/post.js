@@ -1,26 +1,26 @@
-const db = require('../util/ikea');
+const db = require('../../util/sample');
 
-module.exports = class member {
-  constructor(id, name, sex, address, email) {
+module.exports = class Post {
+  constructor(id, title, category, date, article) {
     this.id = id;
-    this.name = name;
-    this.sex = sex;
-    this.address = address;
-    this.email = email;
+    this.title = title;
+    this.category = category;
+    this.date = date;
+    this.article = article;
   }
 
   // CREATE 
   static add(req, res) {
     //console.log('add():', req.body.name, req.body.price);
     return db.execute(
-      'INSERT INTO member (title, category, date, article) VALUES (?, ?, ?, ?)',
+      'INSERT INTO post (title, category, date, article) VALUES (?, ?, ?, ?)',
       [req.body.title, req.body.category, req.body.date, req.body.editor1]
     );
   }
 
   // READ
   static fetchAll() {
-    return db.execute('SELECT * FROM member');
+    return db.execute('SELECT * FROM post');
   }
 
   static findById(id) {
@@ -51,6 +51,6 @@ module.exports = class member {
 
 
   static getCount() {
-    return db.execute('SELECT COUNT(*) as count FROM member');
+    return db.execute('SELECT COUNT(*) as count FROM post');
   }
 };
