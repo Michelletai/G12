@@ -16,7 +16,7 @@
       document.getElementById("savePost").submit();
     }
     function deleteCategory(id) {
-      window.location.href = "/category/delete?id=" + id;
+      window.location.href = "/admin/category/delete?id=" + id;
     }    
   </script>
 </head>
@@ -24,7 +24,7 @@
 <body style="font-family: 微軟正黑體 !important;">
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
     <div class="container">
-      <a href="/" class="navbar-brand">家具查詢網</a>
+      <a href="/admin" class="navbar-brand">家具查詢網</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -80,7 +80,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <a href="/category" class="btn btn-light btn-block">
+          <a href="/admin/category" class="btn btn-light btn-block">
             <i class="fas fa-arrow-left"></i> 回到類別列表
           </a>
         </div>
