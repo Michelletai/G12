@@ -29,9 +29,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', ikeaRouter);
-app.use('/category', ikeaCategoryRouter);
-app.use('/member', ikeaMemberRouter);
+app.use('/admin', ikeaRouter);
+app.use('/admin/category', ikeaCategoryRouter);
+app.use('/admin/member', ikeaMemberRouter);
 
  /***********************Sample*****************/
 app.use('/dashboard', dashBoardRouter);
