@@ -9,9 +9,9 @@
 		<title>Verti by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="/client/assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="is-preload homepage">
+	<body class="is-preload no-sidebar">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -28,7 +28,7 @@
 						<nav id="nav">
 								<ul>
 									<li><a href="/">首頁</a></li>
-									<li class="current">
+									<li>
 										<a href="/client/weblist">網站</a>
 										<ul>
 											<% for(var i = 0; i < 6; i++) { 	%>
@@ -38,37 +38,29 @@
 										</ul>
 									</li>
 									<li><a href="/admin/">家具查價網</a></li>
-									<li><a href="/client/about">關於</a></li>
+									<li class="current"><a href="/client/about">關於</a></li>
 								</ul>
 							</nav>
 
 					</header>
 				</div>
 
-			<!-- Features -->
-				<div id="features-wrapper">
+			<!-- Main -->
+				<div id="main-wrapper">
 					<div class="container">
-						<div class="row">
-							<% for(var i=0; i < webSite.length; i++) { %>
-							<div class="col-4 col-12-medium">
-								<!-- Box -->
-									<section class="box feature">
-										<a href="<%= webSite[i].url %>" class="image featured"><img class="image home" src="images/<%= webSite[i].realname %>.png" alt="" /></a>
-										<div class="inner">
-											<header>
-												<h2><a href="<%= webSite[i].url %>"><%= webSite[i].name %></a></h2>
-												<p><%= (webSite[i].desc.substring(0,64) + '...') %></p>
-											</header>
-										</div>
-									</section>
-							</div>
-							<% } %>
+						<div id="content">
+
+							<!-- Content -->
+								<article>
+									<h2 class="about">目前本網站共收錄了 <%=webSite.length%> 個網站資料</h2>
+								</article>
+
 						</div>
 					</div>
 				</div>
 
 			<!-- Footer -->
-				<div id="footer-wrapper-home">
+			<div id="footer-wrapper-home">
 					<footer id="footer" class="container">
 						<div class="row">
 							<div class="col-12">
@@ -86,12 +78,12 @@
 
 		<!-- Scripts -->
 
-			<script src="/client/assets/js/jquery.min.js"></script>
-			<script src="/client/assets/js/jquery.dropotron.min.js"></script>
-			<script src="/client/assets/js/browser.min.js"></script>
-			<script src="/client/assets/js/breakpoints.min.js"></script>
-			<script src="/client/assets/js/util.js"></script>
-			<script src="/client/assets/js/main.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

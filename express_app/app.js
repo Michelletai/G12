@@ -9,6 +9,7 @@ const intialRouter = require('./routes/initial');
 /************************Client*****************/
 const homeRouter = require('./routes/client/home');
 const homeWebListRouter = require('./routes/client/home_weblist');
+const homeAboutRouter = require('./routes/client/home_about');
 /***********************Client*****************/
 
 /***********************Admin*****************/
@@ -43,6 +44,7 @@ app.use('/', intialRouter);
 /************************Client*****************/
 app.use('/client', homeRouter);
 app.use('/client/weblist', homeWebListRouter);
+app.use('/client/about', homeAboutRouter);
 
 /***********************Client*****************/
 
