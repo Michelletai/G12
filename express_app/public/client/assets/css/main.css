@@ -1917,6 +1917,10 @@ input, select, textarea {
 		padding: 6em 0 8em 0;
 	}
 
+	#footer-wrapper-home {
+		padding: 2em 0 3em 0;
+	}
+
 /* Header */
 
 	#header {
