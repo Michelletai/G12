@@ -21,7 +21,7 @@ exports.getHome = async (req, res, next) => {
     .then(([rows]) => {
       webSiteDesc = rows;
     });
-    res.render('client/home', {
+    res.render('client/home_weblist', {
       title: 'Dashboard',
       color: 'btn-primary',
       icon: 'fa-cog',
