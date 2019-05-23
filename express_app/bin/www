@@ -6,20 +6,27 @@
 
 var app = require('../app');
 var debug = require('debug')('blogen-admin:server');
+var fs = require('fs');
 var http = require('http');
+var https = require('https');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '80');
+var port = normalizePort(process.env.PORT || '443');
 app.set('port', port);
 
 /**
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+//var server = http.createServer(app);
+
+var server = https.createServer({
+  key: fs.readFileSync('self_signed_certificate/server.key'),
+  cert: fs.readFileSync('self_signed_certificate/server.crt')
+}, app);
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -28,6 +35,14 @@ var server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
+
+/*
+servers.listen(443, function () {
+  console.log('Example app listening on port 443! Go to https://localhost:443/')
+});
+servers.on('error', onError);
+servers.on('listening', onListening);
+*/
 
 /**
  * Normalize a port into a number, string, or false.
