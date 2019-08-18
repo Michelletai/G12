@@ -6,20 +6,34 @@
 
 var app = require('../app');
 var debug = require('debug')('blogen-admin:server');
+var fs = require('fs');
 var http = require('http');
+var https = require('https');
 
 /**
  * Get port from environment and store in Express.
  */
-
-var port = normalizePort(process.env.PORT || '800');
+//var port = normalizePort(process.env.PORT || '800');
+var port = normalizePort(process.env.PORT || '443');
 app.set('port', port);
 
 /**
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+http.createServer(app).listen(800);
+var server = https.createServer({
+  key: fs.readFileSync('self_signed_certificate/server.key'),
+  cert: fs.readFileSync('self_signed_certificate/server.crt')
+}, app);
+
+app.all('*', function (req, res, next) { 
+  if(req.protocol === 'https'){
+      return next();
+  }
+  res.redirect('https://' + req.hostname + rea.url);
+});
+
 
 /**
  * Listen on provided port, on all network interfaces.

@@ -26,7 +26,6 @@ var accountRouter = require('./routes/sample/account');
 /***********************Sample*****************/
 
 
-
 var app = express();
 
 // view engine setup
@@ -39,8 +38,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', intialRouter);
 
+app.use('/', intialRouter);
 /************************Client*****************/
 app.use('/client', homeRouter);
 app.use('/client/weblist', homeWebListRouter);
@@ -62,8 +61,6 @@ app.use('/404411687', accountRouter);
  /***********************Sample*****************/
 
 
-
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     next(createError(404));
@@ -79,5 +76,6 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('sample/error');
 });
+
 
 module.exports = app;
